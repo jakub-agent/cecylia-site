@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cecylia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      overflow: hidden;
+    }
+
+    .shimmer-text {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: clamp(4rem, 12vw, 10rem);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #e0e0e0;
+      background: linear-gradient(
+        120deg,
+        #e0e0e0 0%,
+        #e0e0e0 40%,
+        #ffffff 50%,
+        #e0e0e0 60%,
+        #e0e0e0 100%
+      );
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 2.5s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: -100% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="shimmer-text">Cecylia</h1>
+</body>
+</html>
